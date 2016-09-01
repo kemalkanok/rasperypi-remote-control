@@ -1,6 +1,7 @@
 import socket
 import fcntl
 import struct
+import urllib2
 
 def get_ip_address(ifname):
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -11,5 +12,7 @@ def get_ip_address(ifname):
     )[20:24])
 
 ip = get_ip_address('wlan0')
+
+urllib2.urlopen("http://tools.exsto.xyz/store_ip.php?ip=" + ip).read()
 
 print ip
