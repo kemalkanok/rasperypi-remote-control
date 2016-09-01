@@ -2,10 +2,8 @@
 if($_GET['command'] && $_GET['value'])
 {
 	$command = $_GET['command'];
-	$level   = $_GET['level'];
+	$value   = $_GET['value'];
+	var_dump(compact('command','value'));
 
-	var_dump(compact('command','level'));
 }
-
-
 ?>
