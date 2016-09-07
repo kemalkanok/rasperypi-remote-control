@@ -1,10 +1,9 @@
 <?php 
-if($_GET['command'] && $_GET['value'])
+if($_GET['value'])
 {
 	$command = $_GET['command'];
 	$value   = $_GET['value'];
-	if($command == 'motor')
-	{
+	
 		switch ($value) {
 			case '1':
 				$direction =  "yukarı";//top
@@ -28,7 +27,7 @@ if($_GET['command'] && $_GET['value'])
 				break;
 		}
 		echo $direction;
-	}
+	
 	
 
 }
