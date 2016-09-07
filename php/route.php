@@ -1,5 +1,5 @@
 <?php 
-if($_GET['value'])
+if(isset($_GET['value']))
 {
 	$command = $_GET['command'];
 	$value   = $_GET['value'];
