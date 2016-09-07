@@ -24,7 +24,7 @@ if($_GET['command'] && $_GET['value'])
 				$direction = 'stop';
 				break;
 		}
-		file_put_contents('commands.txt', file_get_contents('commands.txt') .PHP_EOL.$direction);
+		echo $direction;
 	}
 	
 
