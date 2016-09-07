@@ -8,12 +8,12 @@ if($_GET['command'] && $_GET['value'])
 		switch ($value) {
 			case '1':
 				$direction =  "yukarı";//top
-				$direction = __DIR__ . '/goF.py'
+				$direction = __DIR__ . '/goF.py';
 				
 				break;
 			case '2':
 				$direction =  "aşağı";
-				$direction = __DIR__ . '/goB.py'
+				$direction = __DIR__ . '/goB.py';
 				break;
 			case '3':
 				$direction =  "sol";
@@ -24,7 +24,7 @@ if($_GET['command'] && $_GET['value'])
 			
 			default:
 				$direction = 'stop';
-				$direction = __DIR__ . '/halt.py'
+				$direction = __DIR__ . '/halt.py';
 				break;
 		}
 		echo $direction;
