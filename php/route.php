@@ -8,7 +8,7 @@ if($_GET['command'] && $_GET['value'])
 		switch ($value) {
 			case '1':
 				$direction =  "yukarı";
-				$path = __DIR__ . 'goF.py'
+				$path = __DIR__ . 'goF.py';
 				$direction = $path;
 				break;
 			case '2':
