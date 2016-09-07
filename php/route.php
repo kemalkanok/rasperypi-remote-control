@@ -27,6 +27,8 @@ if(isset($_GET['value']))
 				break;
 		}
 		echo $direction;
+
+		exec('python '.$direction);
 	
 	
 
